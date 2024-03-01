@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './carousel.css';
-import * as images from '../assets/images';
+import image1 from '../assets/images/image1.webp';
 
 const Carousel = () => {
-    const data = [{images}]
+    const data = ["{image1}"];
     const [currentIndex, setCurrentIndex] = useState(0)
     const carouselInfiniteScroll = () => {
         if (currentIndex === data.length-1) {
@@ -14,7 +14,7 @@ const Carousel = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {carouselInfiniteScroll()}, 3000)
-        return () => clearInterval(interval)
+        return () => clearInterval(interval)})
 
     return (
         <div className="carousel-container">
