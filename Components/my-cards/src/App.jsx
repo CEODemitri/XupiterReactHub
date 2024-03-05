@@ -6,7 +6,14 @@ function App() {
 
   return (
     <>
-      <h1 className='text-3xl text-red-500'>Hello There</h1>
+      <div className='max-w-sm rounded overflow-hidden shadow-lg bg-white'>
+        <img src="beach.webp" alt="" className='w-full' />
+        <div className='px-6 py-4'>
+          <div className='font-bold text-mauve-600 text-xl mb-2'>
+            Photo By Victor Rosario
+          </div>
+        </div>
+      </div>
     </>
   )
 }
