@@ -1,1 +1,0 @@
-from video i am at 12:49
