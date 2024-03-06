@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -22,19 +19,18 @@ export default {
         // dirty-orange
         // start customizing
         dirtyOrange: {
-          100: "#F8F8F8",
-          200: "#F0F0F0",
-          300: "#E8E8E8",
-          400: "#E0E0E0",
-          500: "#000",
-          600: "#D0D0D0",
-          700: "#C8C8C8",
-          800: "#C0C0C0",
-          900: "#B8B8B8",
+          100: "#FDC196",
+          200: "#F1A66F",
+          300: "#EB9657",
+          400: "#E08847",
+          500: "#D97B37",
+          600: "#CE6F2A",
+          700: "#9E5723",
+          800: "#803A06",
+          900: "#502200",
         },
       },
     },
   },
   plugins: [],
-}
-
+};
