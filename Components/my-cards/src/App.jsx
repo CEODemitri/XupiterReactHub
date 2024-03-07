@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import './App.css'
+import ReactCard from './Components/ReactCard'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div className='max-w-sm rounded overflow-hidden shadow-md shadow-indigo-600 bg-white mb-5'>
@@ -78,7 +76,7 @@ function App() {
         </div>
       </div>
 
-      {/* Ussing Percentage and I love the responsove look. Possibly not optimized but working great. */}
+      {/* Using Percentage and I love the responsove look. Possibly not optimized but working great. */}
       <div className='max-w-[30%] rounded overflow-hidden shadow-md shadow-indigo-600 bg-white mt-5 hover:scale-110 hover:mt-8'>
         <img src="see.webp" alt="Bird Eye View of a Coast" className='w-full' />
         <div className='px-6 py-4'>
@@ -102,6 +100,8 @@ function App() {
           </ul>
         </div>
       </div>
+
+      <ReactCard/>
     </>
   )
 }
