@@ -1,3 +1,4 @@
+import LoginButton from "./Components/LoginButton"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-peru-600 text-gainsboro-50 hover:bg-primary/90 h-9 rounded-md px-3 ml-auto">
               Login
             </button>
+            <LoginButton/>
           </div>
           <div className="grid gap-4 md:gap-8 md:grid-cols-[300px_1fr]">
             <div className="flex flex-col gap-2">
@@ -85,7 +87,7 @@ function App() {
             </div>
             <div className="grid gap-4">
               <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
@@ -113,7 +115,7 @@ function App() {
               </div>
 
               <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
@@ -141,7 +143,7 @@ function App() {
               </div>
 
               <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
@@ -169,7 +171,7 @@ function App() {
               </div>
 
               <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
@@ -195,8 +197,9 @@ function App() {
                   </button>
                 </div>
               </div>
+
               <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm"
+                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
