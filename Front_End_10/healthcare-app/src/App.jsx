@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="grid min-h-screen py-4 gap-4 lg:grid-cols-1 bg-peru-100 dark:bg-gainsboro-800">
         <div className="mx-4">
-          <div className="flex items-center gap-4 border mb-5 rounded dark:bg-gainsboro-700 p-2">
+          <div className="flex justify-between items-center gap-4 border mb-5 rounded dark:bg-gainsboro-700 p-2">
             <a className="flex items-center gap-2 font-semibold" href="https://demitri.vercel.app">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,9 +27,6 @@ function App() {
               </svg>
               <span className="">Acme Medical</span>
             </a>
-            <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-peru-600 text-gainsboro-50 hover:bg-primary/90 h-9 rounded-md px-3 ml-auto">
-              Login
-            </button>
             <LoginButton/>
           </div>
           <div className="grid gap-4 md:gap-8 md:grid-cols-[300px_1fr]">

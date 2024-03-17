@@ -13,14 +13,17 @@ function LoginButton() {
 
   return (
     <div>
-      <button onClick={handleClick}>Log In</button>
+      <button onClick={handleClick} className='inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-peru-600 text-gainsboro-50 hover:bg-primary/90 h-9 rounded-md px-3 ml-auto'>Log In</button>
       {isOpen && (
-        <dialog open>
-          <h2>Login Dialog</h2>
-          <button onClick={handleClose}>Close</button>
+        <dialog open className='w-96 h-60 border border-peru-300 absolute rounded-md'>
+          <h2 className='font-bold text-3xl text-center'>Login</h2>
+          <button onClick={handleClose} className='absolute top-0 right-3 text-peru-500 text-2xl px-2 mt-2 bg-gainsboro-100 rounded-lg'>X</button>
           {/* Insert your login form here */}
-          <form action="">
-            <input type="email" placeholder='Email'/>
+          <form action="" className='flex flex-col gap-3 items-center mt-10'>
+            <input type="email" placeholder='Email' className='bg-gainsboro-200 w-[90%] rounded-md py-1'/>
+            <input type="password" placeholder='Password' className='bg-gainsboro-200 w-[90%] rounded-md py-1'/>
+            <button className='bg-gainsboro-700 text-white w-[50%] py-1 text-xl'>Login</button>
+            <p className='text-[0.6rem] text-gainsboro-300'>Made by Christian & Daddy</p>
           </form>
         </dialog>
       )}
