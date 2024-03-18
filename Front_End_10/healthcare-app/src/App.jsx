@@ -1,7 +1,15 @@
 import LoginButton from "./Components/LoginButton"
+import DoctorCard from './Components/DoctorCard';
 
 
 function App() {
+  const embid = {
+    name: 'Dr. Embid Joel',
+    specialty: 'Dermatology',
+    telemedicine: true,
+    hours: '3:00 PM - 5:00 PM',
+    image: '../src/assets/drembid.avif'
+  };
 
   return (
     <>
@@ -82,21 +90,24 @@ function App() {
                 </button>
               </form>
             </div>
+            
             <div className="grid gap-4">
+              <DoctorCard doctor={embid} />
+
               <div
                 className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
                 data-v0-t="card"
               >
                 <div className="p-6 flex items-center gap-4">
                   <img
-                    src="/placeholder.svg"
+                    src="../src/assets/drrogers.jpeg"
                     width="80"
                     height="80"
                     className="rounded-full"
                     alt="Avatar"
                   />
                   <div className="grid gap-1 text-sm md:grid-cols-2 md:text-base">
-                    <div className="font-semibold">Dr. Sophia Anderson</div>
+                    <div className="font-semibold">Dr. Rogers Mister</div>
                     <div className="text-gray-500 dark:text-gray-400">
                       Dermatology
                     </div>
@@ -117,37 +128,9 @@ function App() {
               >
                 <div className="p-6 flex items-center gap-4">
                   <img
-                    src="/placeholder.svg"
+                    src="../src/assets/drbarney.webp"
                     width="80"
-                    height="80"
-                    className="rounded-full"
-                    alt="Avatar"
-                  />
-                  <div className="grid gap-1 text-sm md:grid-cols-2 md:text-base">
-                    <div className="font-semibold">Dr. Sophia Anderson</div>
-                    <div className="text-gray-500 dark:text-gray-400">
-                      Dermatology
-                    </div>
-                    <div>Available for telemedicine</div>
-                    <div className="text-gray-500 dark:text-gray-400">
-                      3:00 PM - 5:00 PM
-                    </div>
-                  </div>
-                  <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 ml-auto">
-                    Book
-                  </button>
-                </div>
-              </div>
-
-              <div
-                className="rounded-lg border bg-card text-card-foreground shadow-sm p-6"
-                data-v0-t="card"
-              >
-                <div className="p-6 flex items-center gap-4">
-                  <img
-                    src="/placeholder.svg"
-                    width="80"
-                    height="80"
+                    height="60"
                     className="rounded-full"
                     alt="Avatar"
                   />
