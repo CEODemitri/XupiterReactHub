@@ -18,7 +18,7 @@ export default function ReactCard() {
 
   return (
     <>
-      <div className="max-w-sm rounded overflow-hidden bg-mauve-100 shadow-md shadow-dirtyOrange-700 mt-5">
+      <div className="max-w-sm rounded overflow-hidden bg-yellow-500/60 shadow-md shadow-dirtyOrange-700 mt-5">
         <img src="../paint.webp" alt="" />
         <div className="px-6 py-4">
           <div className="font-bold text-mauve-600 text-xl mb-2">
